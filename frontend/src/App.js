@@ -32,6 +32,71 @@ import EditEventsPage from "./Pages/EditEventsPage";
 import RootLayout from "./Pages/Root";
 import EventsRootLayout from "./Pages/EventsRoot";
 import ErrorPage from "./Pages/Error";
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <RootLayout />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       { index: true, element: <HomePage /> },
+//       {
+//         path: "events",
+//         element: <EventsRootLayout />,
+//         children: [
+//           {
+//             index: true,
+//             element: <EventsPage />,
+//             loader: eventsLoader,
+//           },
+//           {
+//             path: ":eventId",
+//             element: <EventsDetailsPage />,
+//             loader: eventDetailLoader,
+//           },
+//           { path: "new", element: <NewEventsPage /> },
+//           { path: ":eventId/edit", element: <EditEventsPage /> },
+//         ],
+//       },
+//     ],
+//   },
+// ]);
+
+// const router = createBrowserRouter([
+//   {
+//     path: "/",
+//     element: <RootLayout />,
+//     errorElement: <ErrorPage />,
+//     children: [
+//       { index: true, element: <HomePage /> },
+//       {
+//         path: "events",
+//         element: <EventsRootLayout />,
+//         children: [
+//           {
+//             index: true,
+//             element: <EventsPage />,
+//             loader: eventsLoader,
+//           },
+//           {
+//             path: ":eventId",
+//             loader: eventDetailLoader,
+
+//             children: [
+//               {
+//                 index: true,
+//                 element: <EventsDetailsPage />,
+//               },
+//               { path: "edit", element: <EditEventsPage /> },
+//             ],
+//           },
+
+//           { path: "new", element: <NewEventsPage /> },
+//         ],
+//       },
+//     ],
+//   },
+// ]);
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -50,11 +115,17 @@ const router = createBrowserRouter([
           },
           {
             path: ":eventId",
-            element: <EventsDetailsPage />,
+            id: "event-detail",
             loader: eventDetailLoader,
+            children: [
+              {
+                index: true,
+                element: <EventsDetailsPage />,
+              },
+              { path: "edit", element: <EditEventsPage /> },
+            ],
           },
           { path: "new", element: <NewEventsPage /> },
-          { path: ":eventId/edit", element: <EditEventsPage /> },
         ],
       },
     ],
