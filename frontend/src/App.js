@@ -27,75 +27,11 @@ import EventsPage, { loader as eventsLoader } from "./Pages/Events";
 import EventsDetailsPage, {
   loader as eventDetailLoader,
 } from "./Pages/EventsDetails";
-import NewEventsPage from "./Pages/NewEvents";
+import NewEventsPage, { action as newEventAction } from "./Pages/NewEvents";
 import EditEventsPage from "./Pages/EditEventsPage";
 import RootLayout from "./Pages/Root";
 import EventsRootLayout from "./Pages/EventsRoot";
 import ErrorPage from "./Pages/Error";
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <RootLayout />,
-//     errorElement: <ErrorPage />,
-//     children: [
-//       { index: true, element: <HomePage /> },
-//       {
-//         path: "events",
-//         element: <EventsRootLayout />,
-//         children: [
-//           {
-//             index: true,
-//             element: <EventsPage />,
-//             loader: eventsLoader,
-//           },
-//           {
-//             path: ":eventId",
-//             element: <EventsDetailsPage />,
-//             loader: eventDetailLoader,
-//           },
-//           { path: "new", element: <NewEventsPage /> },
-//           { path: ":eventId/edit", element: <EditEventsPage /> },
-//         ],
-//       },
-//     ],
-//   },
-// ]);
-
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: <RootLayout />,
-//     errorElement: <ErrorPage />,
-//     children: [
-//       { index: true, element: <HomePage /> },
-//       {
-//         path: "events",
-//         element: <EventsRootLayout />,
-//         children: [
-//           {
-//             index: true,
-//             element: <EventsPage />,
-//             loader: eventsLoader,
-//           },
-//           {
-//             path: ":eventId",
-//             loader: eventDetailLoader,
-
-//             children: [
-//               {
-//                 index: true,
-//                 element: <EventsDetailsPage />,
-//               },
-//               { path: "edit", element: <EditEventsPage /> },
-//             ],
-//           },
-
-//           { path: "new", element: <NewEventsPage /> },
-//         ],
-//       },
-//     ],
-//   },
-// ]);
 
 const router = createBrowserRouter([
   {
@@ -125,7 +61,7 @@ const router = createBrowserRouter([
               { path: "edit", element: <EditEventsPage /> },
             ],
           },
-          { path: "new", element: <NewEventsPage /> },
+          { path: "new", element: <NewEventsPage />, action: newEventAction },
         ],
       },
     ],
