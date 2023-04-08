@@ -1,11 +1,1 @@
-{
-  "events": [
-    {
-      "id": "e1",
-      "title": "A dummy event",
-      "date": "2023-02-22",
-      "image": "https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg",
-      "description": "Join this amazing event and connect with fellow developers."
-    }
-  ]
-}
+{"events":[{"title":"A Big dog show again","image":"https://images.pexels.com/photos/3658120/pexels-photo-3658120.jpeg?auto=compress&cs=tinysrgb&w=1600","date":"2023-04-16","description":"A big dog show","id":"f0f45af7-ea7a-45d2-ae2b-e9347bd2e01a"},{"title":"A dog show","image":"https://images.pexels.com/photos/895259/pexels-photo-895259.jpeg?auto=compress&cs=tinysrgb&w=1600","date":"2023-04-09","description":"Show us a dog ff","id":"bb7cb253-44d0-482d-86a7-a9f683228a8d"},{"title":"A fat dog goo","image":"https://images.pexels.com/photos/4588052/pexels-photo-4588052.jpeg?auto=compress&cs=tinysrgb&w=1600","date":"2023-04-09","description":"fat dog","id":"ed68fe0d-1b54-49b0-b79a-f320696d3499"},{"title":"A fat dog","image":"https://images.pexels.com/photos/4588052/pexels-photo-4588052.jpeg?auto=compress&cs=tinysrgb&w=1600","date":"2023-04-09","description":"fat dog","id":"1b608492-165c-4616-9dd1-5c25559ab707"},{"title":"another event","image":"https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=1600","date":"2023-04-09","description":"glasses","id":"0bd9c3d8-1826-4717-b02a-fdaf85dd25b0"},{"title":"A dog show","image":"https://images.pexels.com/photos/895259/pexels-photo-895259.jpeg?auto=compress&cs=tinysrgb&w=1600","date":"2023-04-09","description":"Show us a dog","id":"c9a46799-ba0c-437f-92fe-6415e11364e9"},{"id":"e1","title":"A dummy event","date":"2023-02-22","image":"https://blog.hubspot.de/hubfs/Germany/Blog_images/Optimize_Marketing%20Events%20DACH%202021.jpg","description":"Join this amazing event and connect with fellow developers."}]}
